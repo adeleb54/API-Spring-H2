@@ -8,8 +8,6 @@ import javax.persistence.Id;
 @Entity
 public class Pet {
 
-    private static int idCounter = 0;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -24,7 +22,6 @@ public class Pet {
      * @param age âge (en années) de l'animal
      */
     public Pet(String name, String animal, int age) {
-        this.id = idCounter++;
         this.name = name;
         this.animal = animal;
         this.age = age;
@@ -60,5 +57,13 @@ public class Pet {
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", animal='" + animal + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

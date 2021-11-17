@@ -35,6 +35,20 @@ public class SpringBddApplication {
 
             log.info("Affichage d'un animal (findByName)");
             log.info(petRepository.findByName("Pilou").toString());
+
+            log.info("Ajout d'un animal (save)");
+            petRepository.save(new Pet("Sora", "Dog", 10));
+            for(Pet p : petRepository.findAll()){
+                log.info(p.toString());
+            }
+
+            log.info("Suppression d'un animal (deleteById)");
+            petRepository.deleteById(4);
+            for(Pet p : petRepository.findAll()){
+                log.info(p.toString());
+            }
+
+
         };
     }
 
