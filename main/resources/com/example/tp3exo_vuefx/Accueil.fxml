@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="255.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3exo_vuefx.AccueilController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane>
+         <children>
+            <Label alignment="CENTER" layoutX="98.0" layoutY="9.0" prefHeight="38.0" prefWidth="176.0" text="Gestion des animaux" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         
+                <Label fx:id="welcomeText" />
+            <Button fx:id="searchButton" layoutX="39.0" layoutY="102.0" mnemonicParsing="false" onAction="#recherche" text="Rechercher un animal" />
+            <Button layoutX="217.0" layoutY="102.0" mnemonicParsing="false" onAction="#suppression" text="Supprimer un animal" />
+            <Button layoutX="49.0" layoutY="171.0" mnemonicParsing="false" onAction="#ajout" text="Ajouter un animal" />
+            <Button layoutX="222.0" layoutY="171.0" mnemonicParsing="false" onAction="#modification" text="Modifier un animal" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

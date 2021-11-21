@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="297.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp3exo_vuefx.RechercheController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="358.0" prefWidth="486.0">
+            <children>
+                <Label alignment="CENTER" layoutX="126.0" layoutY="9.0" prefHeight="38.0" prefWidth="176.0" text="Rechercher un animal" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="314.0" layoutY="102.0" mnemonicParsing="false" onAction="#recherche" text="OK" />
+            <TextField fx:id="idField" layoutX="114.0" layoutY="102.0" />
+            <Text layoutX="24.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID de l'animal : " wrappingWidth="101.79961395263672" />
+            <Text fx:id="resRecherche" layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="349.33673095703125" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
